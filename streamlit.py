@@ -10,9 +10,10 @@ with st.sidebar:
             label="What is the URL?",
             max_chars=250
             )
-        number = st.sidebar.text_area(
+        number = st.sidebar.text_input(
             label="What is the phone number?",
-            max_chars=250
+            max_chars=250,
+            type = "password"
             )
 
 if url:
