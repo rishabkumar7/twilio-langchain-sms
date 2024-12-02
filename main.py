@@ -20,7 +20,7 @@ def create_db_from_url(url: str):
     return docs
 
 def generate_summary(docs):
-  llm = Ollama(model="mistral")
+  llm = Ollama(model="phi3")
   chain = load_summarize_chain(llm,
                             chain_type="map_reduce",
                             verbose = True)
