@@ -20,6 +20,7 @@ if url:
     docs = lch.create_db_from_url(url)
     response = lch.generate_summary(docs)
     st.write(response)
+    
     if number:
-      lch.send_summary(number, response)
-      st.info("Summary sent to the your phone number")
+        lch.send_summary(number, response)
+        st.info("Summary sent to the your phone number")
